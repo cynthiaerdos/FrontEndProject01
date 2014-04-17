@@ -141,9 +141,54 @@ div#large-image{
     height: 235px;
     background-image: url('assets/new_arrivals.jpg');
     margin-top: 9px;
+    margin-bottom:10px;
     padding-top: 62px;
     padding-left: 16px;
     font-size: 40px;
     color: #ffffff;
     letter-spacing: 3px;
+}
+
+div#content{
+    height: 468px;
+    width: 901px;
+    border-bottom:4px solid #3e3f43;
+}
+
+div#products{
+    width: 285px;
+    height:444px;
+    float:left;
+    background-color: red; /* REMOVE THIS LINE */
+}
+
+div#products-header{
+    height:46px;
+    background-color: #262729;
+    padding-left: 13px;
+    line-height:46px;
+    font-size:30px;
+    color:#64a9ca;
+    margin-bottom:11px;
+}
+
+div#left-product{
+    float: left;
+}
+
+div#product-option{
+    width:70px;
+    height:103px;
+    margin-bottom:24px;
+    background-color: green; /* REMOVE THIS LINE */
+    margin-right:8px;
+}
+
+div#style{
+    width: 295px;
+    height:444px;
+    margin-left: 11px;
+    border-left:2px dashed #3e3f43;
+    background-color: yellow; /* REMOVE THIS LINE */
+    float:left;
 }
