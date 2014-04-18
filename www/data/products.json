@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Green t-shirt",
+        "img": "css/assets/tshirt-green-small.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+    },
+    {
+        "id": 2,
+        "name": "Red t-shirt",
+        "img": "css/assets/tshirt-red-small.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+    },
+    {
+        "id": 3,
+        "name": "Blue t-shirt",
+        "img": "css/assets/tshirt-blue-small.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+    }
+    ]
