@@ -5,6 +5,10 @@
 	font-family:arial;
 }
 
+span.bold{
+    font-weight: bold;
+}
+
 div.site{
 	width:901px;
 	height:auto;
@@ -264,7 +268,8 @@ div.facebook{
     position: relative;
 }
 
-div.facebook b.join-us{
+div.facebook span.join-us{
     position:absolute;
     bottom:-3px;
+    font-weight: bold;
 }
