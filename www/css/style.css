@@ -32,35 +32,24 @@ div.site-logo{
 	float:left;
 }
 div.menu{
-	margin-left:269px;
+	margin-left:257px;
 	width:281px;
 	height:47px;
 	position:relative;
 }
-	
-div.menu-item{
-	float:left;
-	position:absolute;
-	bottom:0px;
-	font-size:13px;
-}
-	
-font.home{
-	margin-left:12px;
+
+ul{
+    margin:0px;
+    list-style:none;
+    position:absolute;
+    bottom: 0px;
 }
 
-font.shop{
-	margin-left:20px;
+li{
+    float:left;
+    margin-left:12px;
 }
-	
-font.about{
-	margin-left:16px;
-}
-	
-font.contact{
-	margin-left:17px;
-}
-	
+
 a.home-on{
 	color:#a8a8a6;
 	text-decoration:none;
