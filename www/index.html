@@ -6,10 +6,13 @@
 	</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
-    <script src="js/angular.min.js">
-        var product1 = {"id":1,"name":"Green t-shirt","img":"css/assets/tshirt-green-small.jpg","description":"Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"};
-        var product2 = {"id":2,"name":"Red t-shirt","img":"css/assets/tshirt-red-small.jpg","description":"Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"};
-        var product1 = {"id":3,"name":"Blue t-shirt","img":"css/assets/tshirt-blue-small.jpg","description":"Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"};
+    <script src="js/angular.min.js"></script>
+    <script type="text/javascript">
+        function mainCtrl($scope){
+            $scope.product1 = {"id":1,"name":"Green t-shirt","img":"css/assets/tshirt-green-small.jpg","description":"Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"};
+            $scope.product2 = {"id":2,"name":"Red t-shirt","img":"css/assets/tshirt-red-small.jpg","description":"Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"};
+            $scope.product3 = {"id":3,"name":"Blue t-shirt","img":"css/assets/tshirt-blue-small.jpg","description":"Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"};
+        }
     </script>
 </head>
 <body>
@@ -39,7 +42,7 @@
             Check out our<br />
             new arrivals!
 		</div>
-		<div class="content">
+		<div class="content" ng-controller="mainCtrl">
 			<div class="products">
 				<div class="products-header">
                         <span class="bold">Featured products</span>
