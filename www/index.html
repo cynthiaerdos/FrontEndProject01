@@ -9,9 +9,9 @@
     <script src="js/angular.min.js"></script>
     <script type="text/javascript">
         function mainCtrl($scope){
-            $scope.product1 = {"id":1,"name":"Green t-shirt","img":"css/assets/tshirt-green-small.jpg","description":"Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"};
-            $scope.product2 = {"id":2,"name":"Red t-shirt","img":"css/assets/tshirt-red-small.jpg","description":"Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"};
-            $scope.product3 = {"id":3,"name":"Blue t-shirt","img":"css/assets/tshirt-blue-small.jpg","description":"Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"};
+            $scope.products = [{"id":1,"name":"Green t-shirt","img":"css/assets/tshirt-green-small.jpg","description":"Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"},
+                               {"id":2,"name":"Red t-shirt","img":"css/assets/tshirt-red-small.jpg","description":"Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"},
+                               {"id":3,"name":"Blue t-shirt","img":"css/assets/tshirt-blue-small.jpg","description":"Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"}];
         }
     </script>
 </head>
@@ -47,11 +47,11 @@
 				<div class="products-header">
                         <span class="bold">Featured products</span>
 				</div>
-				<div class="product">
+				<div class="product" ng-repeat="product in products">
 					<div class="left-product">
                         <div class="product-option">
 					    	<div class="product-image">
-                                <img src="{{ product1.img }}" />
+                                <img src="{{ product.img }}" />
 				    		</div>
                             <a class="basket" href="#">
                                 <div class="product-basket">
@@ -60,52 +60,14 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="product-option">
-			    			<div class="product-image">
-                                <img src="{{ product2.img }}" />
-			    			</div>
-                            <a class="basket" href="#">
-                                <div class="product-basket">
-                                    <span class="bold">Add to<br />
-                                        basket</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-option">
-			    			<div class="product-image">
-                                <img src="{{ product3.img }}" />
-			    			</div>
-                            <a class="basket" href="#">
-			    			    <div class="product-basket">
-                                   <span class="bold">Add to<br />
-                                   basket</span>
-			    		    	</div>
-                            </a>
-                        </div>
 					</div>
 					<div class="right-product">
                         <div class="product-info">
                             <div class="product-title">
-                                <span class="bold">{{ product1.name }}</span>
+                                <span class="bold">{{ product.name }}</span>
                             </div>
                             <div class="product-description">
-                                {{ product1.description }}
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-title">
-                                <span class="bold">{{ product2.name }}</span>
-                            </div>
-                            <div class="product-description">
-                                {{ product2.description }}
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-title">
-                                <span class="bold">{{ product3.name }}</span>
-                            </div>
-                            <div class="product-description">
-                                {{ product3.description }}
+                                {{ product.description }}
                             </div>
                         </div>
 					</div>
