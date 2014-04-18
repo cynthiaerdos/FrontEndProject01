@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html data-ng-app="">
 <head>
 	<title>
 		LoveliFolk
 	</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="js/angular.min.js">
+        var product1 = {"id":1,"name":"Green t-shirt","img":"css/assets/tshirt-green-small.jpg","description":"Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"};
+        var product2 = {"id":2,"name":"Red t-shirt","img":"css/assets/tshirt-red-small.jpg","description":"Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"};
+        var product1 = {"id":3,"name":"Blue t-shirt","img":"css/assets/tshirt-blue-small.jpg","description":"Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"};
+    </script>
 </head>
 <body>
 	<div class="site">
@@ -43,7 +48,7 @@
 					<div class="left-product">
                         <div class="product-option">
 					    	<div class="product-image">
-                                <img src="css/assets/tshirt-green-small.jpg" />
+                                <img src="{{ product1.img }}" />
 				    		</div>
                             <a class="basket" href="#">
                                 <div class="product-basket">
@@ -54,7 +59,7 @@
                         </div>
                         <div class="product-option">
 			    			<div class="product-image">
-                                <img src="css/assets/tshirt-red-small.jpg" />
+                                <img src="{{ product2.img }}" />
 			    			</div>
                             <a class="basket" href="#">
                                 <div class="product-basket">
@@ -65,7 +70,7 @@
                         </div>
                         <div class="product-option">
 			    			<div class="product-image">
-                                <img src="css/assets/tshirt-blue-small.jpg" />
+                                <img src="{{ product3.img }}" />
 			    			</div>
                             <a class="basket" href="#">
 			    			    <div class="product-basket">
@@ -78,26 +83,26 @@
 					<div class="right-product">
                         <div class="product-info">
                             <div class="product-title">
-                                <span class="bold">Green t-shirt</span>
+                                <span class="bold">{{ product1.name }}</span>
                             </div>
                             <div class="product-description">
-                                Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                {{ product1.description }}
                             </div>
                         </div>
                         <div class="product-info">
                             <div class="product-title">
-                                <span class="bold">Red t-shirt</span>
+                                <span class="bold">{{ product2.name }}</span>
                             </div>
                             <div class="product-description">
-                                Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                {{ product2.description }}
                             </div>
                         </div>
                         <div class="product-info">
                             <div class="product-title">
-                                <span class="bold">Blue t-shirt</span>
+                                <span class="bold">{{ product3.name }}</span>
                             </div>
                             <div class="product-description">
-                                Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                {{ product3.description }}
                             </div>
                         </div>
 					</div>
