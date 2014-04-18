@@ -232,10 +232,50 @@ div.product-info{
 }
 
 div.style{
-    width: 295px;
+    width: 285px;
     height:444px;
     margin-left: 11px;
+    padding-left: 10px;
     border-left:2px dashed #3e3f43;
     float:left;
 }
 
+div.medium-image{
+    width:285px;
+    height:286px;
+    margin-bottom: 3px;
+}
+
+div.style-header{
+    width:285px;
+    height:46px;
+    background-color: #262729;
+    color:#63a8c7;
+    text-align: center;
+    line-height: 46px;
+    font-size: 28px;
+    margin-bottom: 9px;
+}
+
+div.style-text{
+    color:#969696;
+    font-size:13px;
+}
+
+div.facebook{
+    background-image: url('assets/facebook.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    width:182px;
+    height:28px;
+    margin-top:9px;
+    float:right;
+    color:#767f88;
+    line-height: 20px;
+    position: relative;
+}
+
+div.facebook b.join-us{
+    position:absolute;
+    bottom:-3px;
+}
