@@ -115,6 +115,10 @@ a.contact{
 }
 
 div.basket{
+    border-bottom: none;
+    border-top: 1px solid #62a9c5;
+    border-left: 1px solid #62a9c5;
+    border-right: 1px solid #62a9c5;
     float:right;
     margin-top:22px;
     height:35px;
@@ -126,6 +130,62 @@ div.basket{
     background-position: 7px 5px;
     font-size:13px;
     color:#5eaac2;
+}
+
+div.basket-items{
+    width:218px;
+    height:auto;
+    background-color: #292a2e;
+    position:absolute;
+    margin-left:655px;
+    margin-top:58px;
+    border-left:1px solid #62a9c5;
+    border-bottom:1px solid #62a9c5;
+    border-right:1px solid #62a9c5;
+    padding-top: 12px;
+    padding-bottom:12px;
+    padding-left:13px;
+    padding-right:13px;
+}
+
+table.table-basket-item{
+    width:218px;
+    border-collapse:collapse;
+}
+
+tr.table-basket-item:first-child{
+    border:none;
+}
+
+tr.table-basket-item{
+    border-top:1px solid #3e3f43;
+    border-bottom:1px solid #3e3f43;
+}
+
+tr.table-basket-item:last-child{
+    border:none;
+}
+
+td{
+    padding:8px;
+}
+
+span.basket-item{
+    color:#5eaac2;
+    font-weight:bold;
+}
+
+span.basket-options{
+    font-size:12px;
+    color:#7d818c;
+}
+
+div.basket-border-bottom{
+    border-bottom: 1px solid #62a9c5;
+    width:150px;
+    float:right;
+    margin-top:22px;
+    height:35px;
 }
 
 p.basket-items{
