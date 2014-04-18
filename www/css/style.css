@@ -5,40 +5,40 @@
 	font-family:arial;
 }
 
-div#site{
+div.site{
 	width:901px;
 	height:auto;
 	margin:0 auto;
 }
 	
-div#header{
+div.header{
 	margin-top:13px;
 	height:67px;
 	width:100%;
 	border-bottom:4px solid #3e3f43;
 }
 	
-div#left-header{
+div.left-header{
 	margin-left:8px;
 	height:47px;
 	width:550px;
 	float:left;
 }
 	
-div#site-logo{
+div.site-logo{
 	width:269px;
 	height:47px;
 	background-image:url('assets/logo.png');
 	float:left;
 }
-div#menu{
+div.menu{
 	margin-left:269px;
 	width:281px;
 	height:47px;
 	position:relative;
 }
 	
-div#menu-item{
+div.menu-item{
 	float:left;
 	position:absolute;
 	bottom:0px;
@@ -121,7 +121,7 @@ a.contact{
 	text-decoration:none;
 }
 
-div#basket{
+div.basket{
     float:right;
     margin-top:22px;
     height:35px;
@@ -141,7 +141,7 @@ p.basket-items{
     margin-left: 34px;
 }
 
-div#large-image{
+div.large-image{
     width: 885px;
     height: 235px;
     background-image: url('assets/new_arrivals.jpg');
@@ -154,20 +154,20 @@ div#large-image{
     letter-spacing: 3px;
 }
 
-div#content{
+div.content{
     height: 468px;
     width: 901px;
     border-bottom:4px solid #3e3f43;
 }
 
-div#products{
+div.products{
     width: 285px;
     height:444px;
     float:left;
     background-color: red; /* REMOVE THIS LINE */
 }
 
-div#products-header{
+div.products-header{
     height:46px;
     background-color: #262729;
     padding-left: 13px;
@@ -177,11 +177,11 @@ div#products-header{
     margin-bottom:11px;
 }
 
-div#left-product{
+div.left-product{
     float: left;
 }
 
-div#product-option{
+div.product-option{
     width:70px;
     height:103px;
     margin-bottom:24px;
@@ -189,7 +189,45 @@ div#product-option{
     margin-right:8px;
 }
 
-div#style{
+div.product-image{
+    margin-bottom: 3px;
+}
+
+div.product-basket{
+    height:21px;
+    width:38px;
+    padding-left: 32px;
+    background-color: #28282a;
+    background-image: url('assets/basket.png');
+    background-repeat: no-repeat;
+    background-position: 4px 3px;
+    font-size: 9px;
+    color: #7d818c;
+    padding-top:4px;
+    padding-bottom:5px;
+}
+
+a.basket{
+    text-decoration:none;
+}
+
+div.right-product{
+    width:207px;
+    background-color:blue; /* CHANGE THIS LINE */
+    height:357px;
+    float: left;
+}
+
+div.product-title{
+    color: #ffffff;
+}
+
+div.product-description{
+    color: #ffffff;
+}
+
+
+div.style{
     width: 295px;
     height:444px;
     margin-left: 11px;
@@ -197,3 +235,4 @@ div#style{
     background-color: yellow; /* REMOVE THIS LINE */
     float:left;
 }
+
