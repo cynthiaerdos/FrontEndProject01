@@ -164,7 +164,6 @@ div.products{
     width: 285px;
     height:444px;
     float:left;
-    background-color: red; /* REMOVE THIS LINE */
 }
 
 div.products-header{
@@ -185,11 +184,12 @@ div.product-option{
     width:70px;
     height:103px;
     margin-bottom:24px;
-    background-color: green; /* REMOVE THIS LINE */
     margin-right:8px;
 }
 
 div.product-image{
+    width:70px;
+    height:70px;
     margin-bottom: 3px;
 }
 
@@ -213,7 +213,6 @@ a.basket{
 
 div.right-product{
     width:207px;
-    background-color:blue; /* CHANGE THIS LINE */
     height:357px;
     float: left;
 }
@@ -224,15 +223,19 @@ div.product-title{
 
 div.product-description{
     color: #ffffff;
+    font-size: 11px;
 }
 
+div.product-info{
+    height:103px;
+    margin-bottom:24px;
+}
 
 div.style{
     width: 295px;
     height:444px;
     margin-left: 11px;
     border-left:2px dashed #3e3f43;
-    background-color: yellow; /* REMOVE THIS LINE */
     float:left;
 }
 
