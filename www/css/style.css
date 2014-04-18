@@ -227,6 +227,43 @@ div.products-header{
     font-size:30px;
     color:#64a9ca;
     margin-bottom:11px;
+    text-align: center;
+}
+
+div.products-header2{
+    height:46px;
+    background-color: #262729;
+    padding-left: 13px;
+    line-height:46px;
+    font-size:30px;
+    color:#64a9ca;
+    text-align: center;
+}
+
+div.customer-details{
+    padding-left: 13px;
+    border-left:2px dashed #3e3f43;
+    float:left;
+    margin-left:12px;
+    height:444px;
+}
+
+div.details-header{
+    width:576px;
+    height:46px;
+    background-color: #262729;
+    padding-left: 13px;
+    line-height:46px;
+    font-size:30px;
+    color:#64a9ca;
+    margin-bottom:11px;
+    text-align: center;
+}
+
+div.details-info{
+    color:#7c818c;
+    width:576px;
+    font-size: 15px;
 }
 
 div.left-product{
@@ -282,6 +319,92 @@ div.product-description{
 div.product-info{
     height:103px;
     margin-bottom:24px;
+}
+
+div.product-item{
+    height:84px;
+    width:285px;
+    border-bottom:1px solid #3e3f43;
+    margin-top:11px;
+}
+
+div.product-quantity{
+    margin-top:14px;
+    width:201px;
+}
+
+div.product-image2{
+    width:70px;
+    height:70px;
+    float:left;
+    margin-right:14px;
+}
+
+div.product-title2{
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+div.product-info2{
+    float:left;
+}
+
+div.product-remove{
+    float:left;
+}
+
+div.quantity{
+    float:left;
+    width:27px;
+    height:16px;
+    text-align:right;
+    background-color: #dddddd;
+    font-size:13px;
+    line-height: 16px;
+    padding-right:7px;
+}
+
+div.quantity-items{
+    float:left;
+    width:auto;
+    height:16px;
+    line-height: 16px;
+    padding-left:6px;
+}
+
+span.update-basket{
+    color:#5eaac2;
+    font-size:12px;
+}
+
+div.product-sum{
+    margin-top:23px;
+}
+
+div.product-total{
+    float:left;
+}
+
+div.update-basket{
+    float:right;
+}
+
+a.update-basket{
+    text-decoration: none;
+    color:#5eaac2;
+}
+
+a.remove-basket{
+    text-decoration: none;
+    color:#7d818c;
+}
+
+div.product-remove{
+    float:right;
+    width:auto;
+    height:16px;
+    line-height: 16px;
+    padding-left:6px;
 }
 
 div.style{
