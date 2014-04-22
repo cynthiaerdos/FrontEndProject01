@@ -114,11 +114,26 @@ a.contact{
 	text-decoration:none;
 }
 
-div.basket{
+.basket-with-border{
     border-bottom: none;
     border-top: 1px solid #62a9c5;
     border-left: 1px solid #62a9c5;
     border-right: 1px solid #62a9c5;
+    float:right;
+    margin-top:22px;
+    height:35px;
+    width:94px;
+    line-height:35px;
+    background-color:#292a2e;
+    background-image: url('assets/basket.png');
+    background-repeat: no-repeat;
+    background-position: 7px 5px;
+    font-size:13px;
+    color:#5eaac2;
+}
+
+.basket-without-border{
+    border: none;
     float:right;
     margin-top:22px;
     height:35px;

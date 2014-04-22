@@ -9,8 +9,25 @@
     <script src="js/angular.min.js"></script>
     <script src="js/script.js"></script>
 </head>
-<body>
+<body ng-controller="mainCtrl">
 	<div class="site">
+        <div class="basket-items" ng-show="calculateNumberOfSelectedItems()>0">
+            <table class="table-basket-item">
+                <tbody ng-repeat="product in selectedProducts track by $index">
+                <tr class="table-basket-item">
+                    <td>
+                        <span class="basket-item">{{product.name}}</span>
+                    </td>
+                    <td>
+                        <span class="basket-options">{{product.quantity}}</span>
+                    </td>
+                    <td>
+                        <span class="basket-options" ng-click = "deleteProduct(product)"><a href="#" class="remove-basket">remove</a></span>
+                    </td>
+                </tr>
+                    </tbody>
+            </table>
+        </div>
 		<div class="header">
 			<div class="left-header">
 				<div class="site-logo">
@@ -26,17 +43,19 @@
 
 				</div>
 			</div>
-			<div class="basket">
+			<div data-ng-class="{'basket-without-border': calculateNumberOfSelectedItems()===0, 'basket-with-border': calculateNumberOfSelectedItems()>0}">
                 <p class="basket-items">
-					<span class="bold">0 ITEMS</span>
+					<span class="bold">{{ calculateNumberOfSelectedItems() }} ITEMS</span>
                 </p>
 			</div>
+            <div class="basket-border-bottom" ng-show="calculateNumberOfSelectedItems()>0">
+            </div>
 		</div>
 		<div class="large-image">
             Check out our<br />
             new arrivals!
 		</div>
-		<div class="content" ng-controller="mainCtrl">
+		<div class="content">
 			<div class="products">
 				<div class="products-header">
                         <span class="bold">Featured products</span>
@@ -47,7 +66,7 @@
 					    	<div class="product-image">
                                 <img src="{{ product.img }}" />
 				    		</div>
-                            <a class="basket" href="#">
+                            <a class="basket" href="#" ng-click = "selectProduct(product)">
                                 <div class="product-basket">
                                     <span class="bold">Add to<br />
                                     basket</span>
